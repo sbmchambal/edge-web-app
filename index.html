@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open YouTube in Edge Mobile</title>
+</head>
+<body>
+    <h1>Open YouTube in Edge Mobile</h1>
+    <p>If you are not redirected automatically, <a id="openEdgeLink" href="#">click here</a>.</p>
+
+    <script>
+        // Construct the URL to open YouTube in Edge Mobile
+        const edgeDeepLink = "microsoft-edge:https://m.youtube.com";
+
+        // Attempt to open the URL in Edge
+        window.location.href = edgeDeepLink;
+
+        // Fallback link
+        document.getElementById('openEdgeLink').href = edgeDeepLink;
+    </script>
+</body>
+</html>
